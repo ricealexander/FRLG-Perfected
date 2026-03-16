@@ -7,7 +7,7 @@ This project builds the definitive version of Kanto. Core mechanics are polished
 If you would like to build off of this project, you are welcome to fork it or reuse any code, so long as you include appropriate credits.
 
 * [**All Changes & Features**](/docs/FEATURES.md)
-* [**FAQ**](/docs/FAQ.md)
+* [**Frequently Asked Questions**](/docs/FAQ.md)
 * [**Installation Instructions**](INSTALL.md)
 
 ----
@@ -15,7 +15,7 @@ If you would like to build off of this project, you are welcome to fork it or re
 ### Guiding Principles
 * Changes have strong canonical justification or precedent
 * Capable of trading with Gen 3 games (RSE/FRLG) on real hardware
-* Compatible with PKHex
+* Compatible with PKHax
 * As mechanics are changed, NPC dialog is updated
 * All code is made for this project or comes from open-source projects and is appropriately credited below
 * This project has an [open source license](/LICENSE.md) and may be freely used provided derivative works are also open source

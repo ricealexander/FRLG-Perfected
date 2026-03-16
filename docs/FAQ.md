@@ -2,16 +2,12 @@
 
 # Table of Contents:
 * Mechanics:
-  * [Will later-generation battle mechanics be implemented? What about the physical/special split?](#will-later-generation-battle-mechanics-be-implemented-what-about-the-physicalspecial-split)
+  * [Will the physical/special split be implemented?](#will-the-physicalspecial-split-be-implemented)
   * [Will new moves be implemented? New held items?](#will-new-moves-be-implemented-new-held-items)
-  * [Will the Generation VI+ Experience Share be implemented?](#will-the-generation-vi-experience-share-be-implemented)
-  * [Will you improve breeding mechanics?](#will-you-improve-breeding-mechanics)
   * [What are the shiny chances? Will they be improved?](#what-are-the-shiny-chances-will-they-be-improved)
-  * [Will you add something to change my Pokémon's IVs/Hidden Power/Nature/etc.?](#will-you-add-something-to-change-my-pokémons-ivshidden-powernatureetc)
 * Pokémon Availability:
   * [Will you add later-generation Pokémon?](#will-you-add-later-generation-pokémon)
   * [How many Pokémon are available? Will *all* Pokémon be catchable?](#how-many-pokémon-are-available-will-all-pokémon-be-catchable)
-  * [Can you change wild Pokémon availability/levels? Can you put *x* Pokémon in *y* map? Will you add more Pokémon in the future?](#can-you-change-wild-pokémon-availabilitylevels-can-you-put-x-pokémon-in-y-map-will-you-add-more-pokémon-in-the-future)
   * [Is there a list of wild encounter tables?](#is-there-a-list-of-wild-encounter-tables)
   * [Can I obtain the other Kanto starters? Can I obtain the unchosen fossil?](#can-i-obtain-the-other-kanto-starters-can-i-obtain-the-unchosen-fossil)
   * [Can I evolve my Kanto Pokémon into their Johto evolutions without the National Dex?](#can-i-evolve-my-kanto-pokémon-into-their-johto-evolutions-without-the-national-dex)
@@ -31,10 +27,10 @@
   * [Where are the new Move Tutors and what moves do they teach?](#where-are-the-new-move-tutors-and-what-moves-do-they-teach)
   * [Is there a location list for all the Master Trainers?](#is-there-a-location-list-for-all-the-master-trainers)
 * Troubleshooting Savefiles, Emulators, and Flashcarts:
-  * [Is my vanilla FireRed or LeafGreen save compatible with FRLG+?](#is-my-vanilla-firered-or-leafgreen-save-compatible-with-frlg)
-  * [My emulator/flashcart doesn't work with FRLG+! The game won't save!](#my-emulatorflashcart-doesnt-work-with-frlg-the-game-wont-save)
-* Modifying FRLG+:
-  * [Can I use FRLG+ as a ROM Base?](#can-i-use-frlg-as-a-rom-base)
+  * [Is my vanilla FireRed or LeafGreen save compatible with FRLG Perfected?](#is-my-vanilla-firered-or-leafgreen-save-compatible-with-frlg-perfected)
+  * [My emulator/flashcart doesn't work with FRLG Perfected! The game won't save!](#my-emulatorflashcart-doesnt-work-with-frlg-perfected-the-game-wont-save)
+* Modifying FRLG Perfected:
+  * [Can I use FRLG Perfected as a ROM Base?](#can-i-use-frlg-perfected-as-a-rom-base)
   * [How did you implement *x* feature? Can I use *y* feature for my hack?](#how-did-you-implement-x-feature-can-i-use-y-feature-for-my-hack)
 * Miscellaneous:
   * [Where do I get TM10 for Hidden Power? Pickup doesn't give me TM10 for Hidden Power!](#where-do-i-get-tm10-for-hidden-power-pickup-doesnt-give-me-tm10-for-hidden-power)
@@ -43,41 +39,25 @@
 
 ## Mechanics:
 
-### Will later-generation battle mechanics be implemented? What about the physical/special split?
-No. This hack aims to preserve the original battle mechanics and maintain link compatibility with the vanilla games. Changing the battle mechanics runs contrary to those goals.
+### Will the Physical/Special split be implemented?
+No. Many types lack sufficient Physical moves (such as Psychic) or Special moves (such as Dark and Rock,) so they miss out on the benefits of the split. This hack must maintain trade compatibility, so no new moves will be added to close these gaps.
 
 ### Will new moves be implemented? New held items?
-No. This hack aims to preserve the original battle mechanics and maintain link compatibility with the vanilla games. Adding new moves or held items runs contrary to those goals.
-
-### Will the Generation VI+ Experience Share be implemented?
-No.
-
-### Will you improve breeding mechanics?
-Breeding mechanics have been ported from Emerald, save for Volt Tackle Pichu breeding, but no further improvements will be made. This hack is not meant to supplant the vanilla games when it comes to obtaining good Pokémon.
-
-Because Volt Tackle Pichu are illegal in Generation III if they weren't generated in Emerald, the Volt Tackle breeding mechanic will not be ported.
+No. This hack must maintain trade compatibility, so new moves and held items are not an option.
 
 ### What are the shiny chances? Will they be improved?
-The shiny chance is 1/8192, as it was in Generation III. The odds of encountering a shiny Pokémon will not be increased.
-
-### Will you add something to change my Pokémon's IVs/Hidden Power/Nature/etc.?
-No. This hack is not meant to supplant the vanilla games when it comes to obtaining good Pokémon. For IVs specifically, players can make the game behave as if all Pokémon IVs are perfect by toggling an option in the Key System Menu. This option does not affect a Pokémon's actual IVs or Hidden Power.
+The shiny chance is currently 1/8192, but it will be modified to 1/4096 and the Shiny Charm will be implemented.
 
 ## Pokémon Availability:
 
 ### Will you add later-generation Pokémon?
-No. This hack aims to maintain link compatibility with the vanilla games and keep all obtainable Pokémon legal in Generation III.
+No. This hack makes many Pokémon more available, but only those found in the Gen 3 National Pokédex.
 
 ### How many Pokémon are available? Will *all* Pokémon be catchable?
-There are 246 Pokémon available in the hack without trading. This hack does not add any new Pokémon that were not available in Generation III. To complete the National Dex, trade with the vanilla games. This is not a 386 hack, and not all Pokémon will be obtainable without trading.
-
-### Can you change wild Pokémon availability/levels? Can you put *x* Pokémon in *y* map? Will you add more Pokémon in the future?
-One of the goals of this hack is to make every Pokémon available to the player legal in Generation III. This means that modifying existing Pokémon encounters or adding new Pokémon to existing encounter tables would make illegal Pokémon obtainable. There are new Pokémon available that were not in FireRed and LeafGreen originally, but they have been painstakingly implemented in such a way as to maintain their Generation III legality.
-
-Adding more Pokémon in the future would require finding ways to make them legal in Generation III, and for the remaining roster of Pokémon there aren't ways to do that while still having it make sense. If you want more Pokémon, trade with vanilla.
+This is not a 386 hack, but all Gen 1 and 2 Pokémon will be obtainable without trading.
 
 ### Is there a list of wild encounter tables?
-Yes, however it is not well-organized. [The link is here](https://github.com/Deokishisu/FRLG-Plus/blob/master/src/data/wild_encounters.h).
+Yes, [wild encounters are found hrere](/src/data/wild_encounters.h). More complete documentation may be added down the line.
 
 ### Can I obtain the other Kanto starters? Can I obtain the unchosen fossil?
 Yes, both in the postgame.
@@ -109,15 +89,15 @@ Yes. A new key item, the Link Bracelet, is available. It is an unmissable key it
 Yes. Most are available as wild held items. Items like the Up-grade have been moved to be available before becoming the Champion.
 <details>
   <summary>Pokemon that hold trade evolution items:</summary>
-  
+
   • Metal Coats can be found rarely on wild Magnemite and Magneton.
-  
+
   • Dragon Scales can be found rarely on wild Dratini and Dragonair.
-  
+
   • King's Rocks can be found rarely on wild Poliwhirl and Slowbro.
-  
+
   • Deep Sea Scales can be found rarely on wild Chinchou underwater.
-  
+
   • Deep Sea Teeth can be found rarely on wild Gyarados underwater.
 </details>
 
@@ -157,7 +137,7 @@ Breed your Hitmonchan/Hitmonlee for a Tyrogue and then evolve that Tyrogue into 
 ## Gameplay:
 
 ### I just started the game, where is the Key System Menu? I can't change my difficulty after a new game!
-Once you have started a new game, you need to save and reset. The Key System Menu is on the Main Menu alongside the Continue and New Game options. 
+Once you have started a new game, you need to save and reset. The Key System Menu is on the Main Menu alongside the Continue and New Game options.
 
 ### Where do I unlock Gym Leader rematches?
 There is an old woman in a house on Seven Island who will start the sidequest for you.
@@ -170,7 +150,7 @@ Both Spearow returning and Gym Leaders visiting are based on steps taken while o
 The sign outside the Battle House will report which Gym Leaders are currently visiting.
 
 ### Can I rematch Giovanni? I can only invite seven Gym Leaders.
-Giovanni is canonically on the run after he flees his Gym and is not seen again in FRLG+. Only the first seven Gym Leaders can be rematched.
+Giovanni is canonically on the run after he flees his Gym and is not seen again in FRLG Perfected. Only the first seven Gym Leaders can be rematched.
 
 ### What are the Challenge Mode boss trainer levels? I want to level cap my Nuzlocke run.
 <details>
@@ -200,8 +180,8 @@ Rematch Champion: 80<br>
 
 ### Where are the new Move Tutors and what moves do they teach?
 <details>
-    <summary>New move tutor locations:</summary>
-    
+  <summary>New move tutor locations:</summary>
+
 • Fury Cutter - Vermilion City
 
 • Rollout - Route 24
@@ -226,21 +206,21 @@ The Master Trainers are all in the same locations as they were in LGPE, with the
 
 ## Troubleshooting Savefiles, Emulators, and Flashcarts:
 
-### Is my vanilla FireRed or LeafGreen save compatible with FRLG+?
-No. The save needed to be edited to add certain features, and therefore vanilla saves are incompatible with FRLG+. Similarly, FRLG+ saves cannot be used in vanilla.
+### Is my vanilla FireRed or LeafGreen save compatible with FRLG Perfected?
+No. The save needed to be edited to add certain features, and therefore vanilla saves are incompatible with FRLG Perfected. Similarly, FRLG Perfected saves cannot be used in vanilla.
 
-### My emulator/flashcart doesn't work with FRLG+! The game won't save!
+### My emulator/flashcart doesn't work with FRLG Perfected! The game won't save!
 The recommended emulator for desktop is [mGBA](https://mgba.io/downloads.html).
 
-If your emulator or flashcart isn't working properly with FRLG+, follow instructions for that particular emulator or flashcart for playing vanilla FireRed or LeafGreen and apply them to getting FRLG+ to work. If a patch is required to get vanilla FireRed or LeafGreen to save properly, then FRLG+ is incompatible with that emulator or flashcart.
+If your emulator or flashcart isn't working properly with FRLG Perfected, follow instructions for that particular emulator or flashcart for playing vanilla FireRed or LeafGreen and apply them to getting FRLG Perfected to work. If a patch is required to get vanilla FireRed or LeafGreen to save properly, then FRLG Perfected is incompatible with that emulator or flashcart.
 
-## Modifying FRLG+:
+## Modifying FRLG Perfected:
 
-### Can I use FRLG+ as a ROM Base?
-My official stance is that all mods of FRLG+ are unauthorized and unsupported, but derivative works of FRLG+ must be free and open source. If you choose to use FRLG+ as a ROM Base, I will not offer any support nor answer questions regarding developing a mod of this hack. Use of FRLG+ as a base is contingent on your resulting work being free and open source, as FRLG+ is.
+### Can I use FRLG Perfected as a ROM Base?
+All mods of FRLG Perfected are unauthorized and unsupported, but derivative works must be free and open source. If you choose to use FRLG Perfected as a ROM Base, I will not offer any support nor answer questions regarding developing a mod of this hack.
 
 ### How did you implement *x* feature? Can I use *y* feature for my hack?
-My commits are descriptively labeled. If you want to grab something from FRLG+, go back through my commits and find where I implemented it. I don't offer support or answer questions for lifting things from FRLG+, but since the project is open source anyone can take from it.
+Commits are descriptively labeled. If you want to grab something from FRLG Perfected, you must go back through the commits and find where it is implemented. I don't offer support or answer questions for lifting things from FRLG Perfected, but since the project is open source anyone can take from it.
 
 ## Miscellaneous:
 
@@ -249,21 +229,16 @@ My commits are descriptively labeled. If you want to grab something from FRLG+, 
 The TM for Hidden Power has been removed from the pickup table and is now sold in the Celadon Dept. Store.
 
 The Pickup table has been changed to the following:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;15% - Oran Berry<br>
-&nbsp;&nbsp;&nbsp;&nbsp;10% - Cheri Berry, Chesto Berry, Pecha Berry, Rawst Berry, Aspear Berry, Persim Berry<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5% - PP Up, Rare Candy, Nugget, Pomeg Berry<br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1% - Kelpsy Berry, Qualot Berry, Hondew Berry, Grepa Berry, Tamato Berry<br>
+  * 15% - Oran Berry<br>
+  * 10% - Cheri Berry, Chesto Berry, Pecha Berry, Rawst Berry, Aspear Berry, Persim Berry<br>
+  * &nbsp;&nbsp;5% - PP Up, Rare Candy, Nugget, Pomeg Berry<br>
+  * &nbsp;&nbsp;1% - Kelpsy Berry, Qualot Berry, Hondew Berry, Grepa Berry, Tamato Berry<br>
 
 ### Will text be decapitalized?
 No.
 
 ### How do I link to other games? When is the earliest I can link?
-FRLG+ is fully compatible with everything that the vanilla international FireRed and LeafGreen games were compatible with. If your emulator supports linking, refer to its documentation for how to initiate a link.
+FRLG Perfected is compatible with trading, but the battle engine has been changed and is incompatible. If your emulator supports linking, refer to its documentation for how to initiate a link.
 
 The player may link with all Generation III GBA and GCN games the moment they receive the Pokédex. Finishing the Net Center on One Island is no longer a prerequisite for trading with the Hoenn games, trading with the Orre games, using Pokémon Box: Ruby and Sapphire, or receiving Eggs or Pokémon that are not in the Kanto Pokédex.
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
-&nbsp;
+
