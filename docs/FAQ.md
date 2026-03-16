@@ -1,8 +1,5 @@
  # **Frequently Asked Questions**
 
-### How can I support development?
-[I have a Ko-fi link](https://ko-fi.com/deokishisu), tips are appreciated!
-
 # Table of Contents:
 * Mechanics:
   * [Will later-generation battle mechanics be implemented? What about the physical/special split?](#will-later-generation-battle-mechanics-be-implemented-what-about-the-physicalspecial-split)
